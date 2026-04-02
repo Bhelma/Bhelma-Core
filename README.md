@@ -4,5 +4,7 @@ Cambiado nombre a BHELMA CORE.
 Contiene prefabs y scripts para ayudar a los editores a añdir mas funciones a sus misiones.
 
 Añadido:
-- Script para que no se quiten las armas de los jugadores cuando vuelven de la insconsciencia.
+- En la seccion WIKI se van añadiendo los añadidos creados para el mod.
+
+En este archivo solo se dejara, si se crean dependencias.
 
