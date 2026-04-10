@@ -1,0 +1,12 @@
+GenericEntity {
+ ID "69050E2B575A73AF"
+ components {
+  BH_TrafficExclusionZone "{69050E2B4080FB0C}" {
+  }
+  RplComponent "{69050E2B4AA6985F}" {
+  }
+  Hierarchy "{69050E2B492DF1E7}" {
+  }
+ }
+ coords 3787.682 4.25 3732.763
+}

@@ -1,0 +1,37 @@
+StaticModelEntity : "{CD7A3D7E7A549B63}Prefabs/Structures/Core/Wall_Base.et" {
+ ID "51E2F0F0E96F07CE"
+ components {
+  SoundComponent "{68E33761250C5575}" {
+   Filenames {
+    "{3E5C88BE093992B9}Sounds/BH_Sounds.acp"
+   }
+  }
+  ActionsManagerComponent "{68E3376133793E72}" {
+   ActionContexts {
+    UserActionContext "{68E337615353114F}" {
+     UIInfo UIInfo "{68E3376155C0772F}" {
+      Name "BH_Cortar_UserAction"
+     }
+     ContextName "BH_Cortar_Alambradas"
+     Position PointInfo "{68E337617C32CD5E}" {
+      Offset 0.0649 0.818 0
+     }
+     Radius 1.5
+    }
+   }
+   additionalActions {
+    BH_CuttTool_UserAction "{68E3376180526AA3}" {
+     ParentContextList {
+      "BH_Cortar_Alambradas"
+     }
+     UIInfo UIInfo "{68E337619B155B96}" {
+      Name "Cortar Alambrada"
+     }
+     VisibilityRange 1.5
+     Duration 10
+     m_fActionDuration 10
+    }
+   }
+  }
+ }
+}

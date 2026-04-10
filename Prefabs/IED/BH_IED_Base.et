@@ -1,0 +1,116 @@
+GenericEntity {
+ ID "68CD14928B9BB8BC"
+ components {
+  Persistence "{68CD1493A2308F5D}" {
+  }
+  SoundComponent "{68CD1493F3A30901}" {
+   Filenames {
+    "{87E0968F67279DFE}Sounds/Weapons/Explosives/_SharedData/Weapons_Explosives_ATMine_Generic.acp" "{48F2916BF555AD1B}Sounds/BH_IED/BH_ied_proximity_beep.acp"
+   }
+  }
+  BH_IED_Controller "{68CD14920F55EFC7}" {
+   m_fCountdownTime 6
+   m_fRingDelay 2
+   m_fExplosionRadius 15
+   m_fExplosionDamage 5000
+  }
+  BH_IED_DisarmInteraction "{68CD149218046B3B}" {
+  }
+  BH_IED_ProximityTrigger "{68CD1492065C890E}" {
+   m_fDetectionRadius 1
+   m_bDetectInfantry 0
+   m_bDetectVehicles 0
+  }
+  MeshObject "{68CD1493BA66916E}" {
+   Object "{16CBC89D8BE3152C}Assets/Weapons/Ammo/Shells/81mm_Mortar_M252/Shell_81mm_HE_M821_2charges.xob"
+  }
+  ActionsManagerComponent "{68CD1493F58714B0}" {
+   ActionContexts {
+    UserActionContext "{68CD1489639C3213}" {
+     ContextName "default"
+     Position PointInfo "{68CD14899D471B8D}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    BH_DisarmAction_Blue "{68CE0012ACAB26CE}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{68CE0012B986FE4C}" {
+      Name "Cortar cable AZUL"
+     }
+     Duration 15
+    }
+    BH_DisarmAction_Green "{68CE0012A297CBEE}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{68CE0012B66DCBCE}" {
+      Name "Cortar Cable VERDE"
+     }
+     Duration 15
+    }
+    BH_DisarmAction_Red "{68CE0012A0CBFBAA}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{68CE0012C3E28561}" {
+      Name "Cortar Cable ROJO"
+     }
+     Duration 15
+    }
+    BH_DisarmAction_Yellow "{68CE0012A690577E}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{68CE0012D97D5C40}" {
+      Name "Cortar Cable Amarillo"
+     }
+     Duration 15
+    }
+   }
+  }
+  RplComponent "{68CD148DBFA0A1EA}" {
+  }
+  Hierarchy "{68CD1493AB05D2F4}" {
+  }
+ }
+ coords 6930.64 436.687 6745.643
+ {
+  $grp GenericEntity : "{3F3A1D96CA18DB53}Prefabs/Items/Equipment/Detonators/BlastingMachine_M34/ArmedDetonatorWires_M34.et" {
+   {
+    ID "68E54A4ED55858B6"
+    coords 0.016 0.004 -0.187
+    angles -83.278 -94.581 -76.893
+   }
+   {
+    ID "68E54A71B4AFCF97"
+    coords 0.004 -0.003 0.141
+    angles -54.913 157.137 19.58
+   }
+  }
+  $grp GenericEntity : "{5C053ACAE9D17683}Prefabs/Items/Equipment/Detonators/BlastingMachine_KPM_3U1/ArmedDetonatorWires_KPM_3U1.et" {
+   {
+    ID "68E54A4E75F4639D"
+    coords -0.003 -0.032 0.011
+    angles -76.403 177.751 1.748
+   }
+   {
+    ID "68E54A4EC91F94CD"
+    coords -0.028 -0.006 -0.095
+    angles 17.578 -66.19 83.855
+   }
+  }
+  GenericEntity : "{B898D2A1F45058F6}Prefabs/Props/Garbage/Military/Food/GarbageFoodMilitaryUSSR_01.et" {
+   ID "68E54A4FB89F317A"
+   coords 0.023 0.01 -0.13
+  }
+  GenericEntity : "{D8C747CBFD867CDD}Prefabs/IED/BH_NokiaPhone_IED.et" {
+   ID "68E722917B173699"
+   coords 0 0.041 0.024
+   angles 1.627 90.087 -78.681
+  }
+ }
+}

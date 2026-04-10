@@ -1,0 +1,247 @@
+BehaviorTree "{0191A917B6BD723F}AI/BehaviorTrees/Chimera/Group/ActivitySuppress.bt" {
+ Name "AI/BehaviorTrees/Chimera/Group/ActivitySuppress.bt"
+ Nodes {
+  RootNode Root {
+   Name "Root"
+   EditorPos 149.286 -270
+   Nodes {
+    Sequence Sequence {
+     Name "Sequence"
+     EditorPos 141.286 -140
+     Nodes {
+      SCR_AIGetSuppressActivityParameters "SCR_AI Get Suppress Activity Parameters" {
+       Name "SCR_AI Get Suppress Activity Parameters"
+       EditorPos -1067.302 241.587
+       OutPorts {
+        SingleOutputPortContainer SingleOutputPortContainer {
+         Port -1
+         PortName "WaypointRelated"
+        }
+        SingleOutputPortContainer SingleOutputPortContainer {
+         Port 5
+         PortName "PriorityLevel"
+        }
+        SingleOutputPortContainer SingleOutputPortContainer {
+         Port 3
+         PortName "SuppressionVolume"
+        }
+       }
+      }
+      ForEachChild "For Each Child" {
+       Name "For Each Child"
+       EditorPos 348.411 293.268
+       Nodes {
+        Sequence Sequence {
+         Name "Sequence"
+         EditorPos 364.057 439.784
+         Nodes {
+          AITaskGetControlledEntity "Get Controlled Entity" {
+           Name "Get Controlled Entity"
+           EditorPos -200.41 557.377
+           InEntity 1
+           OutAgent 2
+          }
+          Selector Selector {
+           Name "Selector"
+           EditorPos 616.788 541.078
+           Nodes {
+            Sequence Sequence {
+             Name "Sequence"
+             EditorPos 338.198 659.217
+             Nodes {
+              DecoTestVariable "Test Variable" {
+               Name "TestFireTeamTrue"
+               EditorPos 233.596 842.642
+               Nodes {
+                SCR_AISendGoalMessage_Suppress "SCR_AI Send Goal Message_ Suppress" {
+                 Name "SCR_AI Send Goal Message_ Suppress"
+                 EditorPos 402.372 1126.873
+                 InPorts {
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port 2
+                   PortName "Receiver"
+                  }
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port 6
+                   PortName "PriorityLevel"
+                  }
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port -1
+                   PortName "IsWaypointRelated"
+                  }
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port 4
+                   PortName "SuppressionVolume"
+                  }
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port -1
+                   PortName "Duration_s"
+                  }
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port -1
+                   PortName "FireRate"
+                  }
+                 }
+                }
+               }
+               AbortType AbortChildrenBranchAndParentFurtherChildren
+               InVariable 7
+               TestType EqualsValue
+               TestValue "1"
+              }
+             }
+            }
+            Sequence Sequence {
+             Name "Sequence"
+             EditorPos 570.207 676.851
+             Nodes {
+              DecoTestVariable "Test Variable" {
+               Name "TestFireTeamFalse"
+               EditorPos 918.155 873.969
+               Nodes {
+                SCR_AISendGoalMessage_Move "SCR_AI Send Goal Message_ Move" {
+                 Name "MoveToCover"
+                 EditorPos 817.33 1122.674
+                 InPorts {
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port 2
+                   PortName "Receiver"
+                  }
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port -1
+                   PortName "PriorityLevel"
+                  }
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port -1
+                   PortName "IsWaypointRelated"
+                  }
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port -1
+                   PortName "FollowEntity"
+                  }
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port -1
+                   PortName "MovePosition"
+                  }
+                  SingleInputPortContainer SingleInputPortContainer {
+                   Port -1
+                   PortName "UseVehicles"
+                  }
+                 }
+                 m_fPriorityLevel 0.5
+                 m_eMovementType RUN
+                }
+               }
+               NegativeCondition 1
+               AbortType AbortChildrenBranchAndParentFurtherChildren
+               InVariable 7
+               TestType EqualsValue
+               TestValue "1"
+              }
+             }
+            }
+           }
+          }
+          AITaskSetVariable "Set Variable" {
+           Name "InvertFireTeam"
+           EditorPos 846.635 448.488
+           SetValue "!InVariable"
+           OutVariable 7
+           InVariable 7
+          }
+         }
+        }
+       }
+       OutEntity 0
+      }
+      AITaskReturnState "Return  State" {
+       Name "Return  State"
+       EditorPos 1094.5 269
+       Result RUNNING
+      }
+     }
+    }
+   }
+  }
+  Sequence Sequence {
+   Name "Sequence"
+   EditorPos 1269.167 512.083
+   Nodes {
+    AITaskIdle Idle {
+     Name "Idle"
+     EditorPos 1109.167 721.667
+     PeriodKey -1
+    }
+    SCR_AICompleteAction "SCR_AI Complete Action" {
+     Name "SCR_AI Complete Action"
+     EditorPos 1242.083 717.5
+    }
+    AITaskReturnState "Return  State" {
+     Name "Return  State"
+     EditorPos 1474.917 709
+     Result RUNNING
+    }
+   }
+  }
+ }
+ Variables {
+  BtVariableEntity groupMemberEntity {
+   Flags 0
+   Desc "IEntity"
+  }
+  BtVariableEntity groupMember {
+   Flags 0
+   Desc "AIAgent"
+  }
+  BtVariableObject suppressionVolume {
+   Flags 0
+   Desc "SCR_AISuppressionVolumeBase"
+  }
+  BtVariableScalar fPriorityLevel {
+   Flags 0
+   Desc "float"
+  }
+  BtVariableBool bFireTeam {
+   Flags 0
+   Desc "rue = equipo A suprime, False = equipo A avanza"
+  }
+  BtVariableInteger iMemberIndex {
+   Flags 0
+   Desc ""
+  }
+ }
+ VariablesRefs {
+  VariableReference groupMemberEntity {
+   VariableType 0
+   EditorPos 580.886 315.022
+  }
+  VariableReference groupMemberEntity {
+   VariableType 0
+   EditorPos -439.716 838.923
+  }
+  VariableReference groupMember {
+   VariableType 1
+   EditorPos -135.442 922.172
+  }
+  VariableReference suppressionVolume {
+   VariableType 2
+   EditorPos -674.953 368.492
+  }
+  VariableReference suppressionVolume {
+   VariableType 2
+   EditorPos -357.358 1082.146
+  }
+  VariableReference fPriorityLevel {
+   VariableType 3
+   EditorPos -674 282
+  }
+  VariableReference fPriorityLevel {
+   VariableType 3
+   EditorPos -108.382 1001.479
+  }
+  VariableReference bFireTeam {
+   VariableType 4
+   EditorPos 822.732 682.368
+  }
+ }
+}

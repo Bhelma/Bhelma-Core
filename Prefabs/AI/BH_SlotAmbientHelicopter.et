@@ -1,0 +1,12 @@
+GenericEntity {
+ ID "68AD40A7949D5C7C"
+ components {
+  Persistence "{68AD40A78DF8D769}" {
+  }
+  SCR_ScenarioFrameworkSlotAmbientHelicopter "{68AD40A786CAC99F}" {
+  }
+  Hierarchy "{68AD40A780B3F661}" {
+  }
+ }
+ coords 7761.137 312.697 8154.302
+}

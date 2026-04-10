@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6437126323F2F833}Assets/Items/Movil/Data/tripo_material_f74cd98736d14af2bed641f7a4bba55c.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

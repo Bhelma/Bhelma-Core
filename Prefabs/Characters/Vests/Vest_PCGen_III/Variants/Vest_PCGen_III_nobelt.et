@@ -1,0 +1,13 @@
+GenericEntity : "{158F912CFD723FC1}Prefabs/Characters/Vests/Vest_PCGen_III/Vest_PCGen_III_Loadout_base.et" {
+ ID "50D8C49B3558F152"
+ components {
+  RHS_ClothNodeStorageComponent "{5DEB2A8AB559C576}" {
+   Attributes SCR_ItemAttributeCollection "{5DEB2A8AB559C568}" {
+    ItemPhysAttributes ItemPhysicalAttributes "{61D1299E52575ED2}" {
+     ItemDimensions 15 15 15
+     ItemVolume 150
+    }
+   }
+  }
+ }
+}

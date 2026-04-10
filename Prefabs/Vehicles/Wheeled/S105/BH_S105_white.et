@@ -1,0 +1,13 @@
+Vehicle : "{63880E311299A016}Prefabs/Vehicles/Wheeled/S105/S105_white.et" {
+ ID "0000000000000001"
+ components {
+  ChimeraAIVehicleControlComponent "{61C2E46781A66E82}" {
+   components {
+    AICarMovementComponent "{61C2E46796C28D80}" {
+     "Max Speed" 30
+     CruiseVehicleSpeedKmh 30
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,79 @@
+SCR_AIGroup : "{000CD338713F2B5A}Prefabs/AI/Groups/Group_Base.et" {
+ ID "0000000000000001"
+ components {
+  AIFormationComponent "{507E9DC12F541FE6}" {
+   "Min Distance to Raytrace an Offset" 2
+   "Projection distance" 15
+  }
+  SCR_AIConfigComponent "{512CC1759AE69D6D}" {
+   m_Skill 0.35
+   m_EnableLeaderStop 1
+   m_aDefaultReactions {
+    SCR_AIIdleReaction "{5468AECDD3FBF072}" {
+     m_OverrideBehaviorTree "{05AFAD0F780ED730}AI/BehaviorTrees/Chimera/Group/ActivityIdle.bt"
+    }
+   }
+   m_aDangerReactions {
+    SCR_AIDangerReaction_ProjectileHit "{68B130AC487F9203}" {
+     m_eType Danger_ProjectileHit
+    }
+    SCR_AIDangerReaction_DamageTaken "{68B130AC93067B0D}" {
+     m_eType Danger_DamageTaken
+    }
+    SCR_AIDangerReaction_GrenadeLanding "{68B130ACF7DF58D0}" {
+     m_eType Danger_GrenadeLanding
+    }
+    SCR_AIDangerReaction_UnsafeArea "{68B130AD15DFCB63}" {
+    }
+   }
+   m_aGoalReactions {
+    SCR_AIGoalReaction_Attack "{5468AECDC8F05AFC}" {
+     m_eType ATTACK
+    }
+    SCR_AIGoalReaction_Defend "{5496D875B15DA43B}" {
+    }
+    SCR_AIGoalReaction_Move "{5468AECD2D979C3D}" {
+     m_OverrideBehaviorTree "{C2D6E7227A4D44CF}AI/BehaviorTrees/Chimera/Group/ActivityMove.bt"
+    }
+    SCR_AIGoalReaction_SeekAndDestroy "{5468AECD244B45C1}" {
+     m_OverrideBehaviorTree "{4D65A688D234D673}AI/BehaviorTrees/Chimera/Group/ActivitySeekDestroy.bt"
+    }
+    SCR_AIGoalReaction_Suppress "{68B130AF626D58D1}" {
+     m_OverrideBehaviorTree "{0191A917B6BD723F}AI/BehaviorTrees/Chimera/Group/ActivitySuppress.bt"
+     m_eType SUPPRESS
+    }
+    SCR_AIGoalReaction_Defend "{68B130AF7EFA42E1}" {
+     m_eType RETREAT
+    }
+   }
+  }
+  SCR_AIGroupMovementComponent "{6126A0E02097C7FF}" {
+   "Navlink Traversal Attempts" 3
+   "Max Stuck Time" 3
+   "Max Distance to Path" 8
+   "Search box area distance" 15
+  }
+  SCR_AIGroupSettingsComponent "{6260EB4E8D5C6608}" {
+   m_aDefaultSettings {
+    SCR_AIGroupCombatModeSetting "{68AF46DB5FF9B78A}" {
+    }
+    SCR_AIGroupFormationSetting "{68AF46DB9BB9C743}" {
+    }
+    SCR_AIGroupCharactersMovementSpeedSetting "{68AF46DBC0DD4F0F}" {
+     m_eSpeed RUN
+    }
+    SCR_AICharacterStanceSetting "{68AF46DBFF5FC96A}" {
+     m_eCause COMBAT
+     m_eStance CROUCH
+    }
+    SCR_AICharacterStanceSetting "{68AF46DA43033B49}" {
+     m_eCause DANGER_HIGH
+    }
+    SCR_AICharacterStanceSetting "{68AF46DA5D9776AD}" {
+     m_eCause SAFE
+     m_eStance STAND
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,40 @@
+FrameWidgetClass {
+ {
+  VerticalLayoutWidgetClass "{593899036CFAA424}" {
+   Prefab "{593899036CFAA424}"
+   {
+    HorizontalLayoutWidgetClass "{0000000060427AFD}" {
+     Prefab "{0000000060427AFD}"
+     {
+      FrameWidgetClass "{56DEA1E8EFA09F0D}" {
+       Prefab "{56DEA1E8EFA09F0D}"
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+      TextWidgetClass "{599C84CFFAF1151B}" {
+       Prefab "{599C84CFFAF1151B}"
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+      OverlayWidgetClass "{615AA498402E141D}" {
+       Prefab "{615AA498402E141D}"
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+      TextWidgetClass "{56FCAED04961AF39}" {
+       Prefab "{56FCAED04961AF39}"
+       "Is Enabled" 0
+       "Is Visible" 0
+       Opacity 0
+      }
+      OverlayWidgetClass "{599ACE67769EE404}" {
+       Prefab "{599ACE67769EE404}"
+       "Is Enabled" 0
+       "Is Visible" 0
+      }
+     }
+    }
+   }
+  }
+ }
+}

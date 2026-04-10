@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{AC22CD447BA722B4}Prefabs/Characters/Vests/Vest_PCGen_III/Variants/Vest_PCGen_III_ultimate_unit.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

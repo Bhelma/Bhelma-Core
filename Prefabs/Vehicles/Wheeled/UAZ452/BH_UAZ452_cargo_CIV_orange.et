@@ -1,0 +1,13 @@
+Vehicle : "{A2E8114A16D3F822}Prefabs/Vehicles/Wheeled/UAZ452/UAZ452_cargo_CIV_orange.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  ChimeraAIVehicleControlComponent "{61C2E46781A66E82}" {
+   components {
+    AICarMovementComponent "{61C2E46796C28D80}" {
+     "Max Speed" 30
+     CruiseVehicleSpeedKmh 30
+    }
+   }
+  }
+ }
+}

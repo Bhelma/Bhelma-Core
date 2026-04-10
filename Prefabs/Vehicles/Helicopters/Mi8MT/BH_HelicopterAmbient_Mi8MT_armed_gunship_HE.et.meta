@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{441C697AD31E8B7E}Prefabs/Vehicles/Helicopters/Mi8MT/BH_HelicopterAmbient_Mi8MT_armed_gunship_HE.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

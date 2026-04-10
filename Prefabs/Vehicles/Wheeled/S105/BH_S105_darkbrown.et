@@ -1,0 +1,13 @@
+Vehicle : "{A1CD41DFE0C93CAD}Prefabs/Vehicles/Wheeled/S105/S105_darkbrown.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  ChimeraAIVehicleControlComponent "{61C2E46781A66E82}" {
+   components {
+    AICarMovementComponent "{61C2E46796C28D80}" {
+     "Max Speed" 30
+     CruiseVehicleSpeedKmh 30
+    }
+   }
+  }
+ }
+}

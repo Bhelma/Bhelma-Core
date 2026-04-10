@@ -1,0 +1,39 @@
+GenericEntity : "{FCAEC0CB2F8FF8BD}Prefabs/Structures/Military/Radar/ApproachRadar_Prop_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SignalsManagerComponent "{630F7B927FCF6E62}" {
+  }
+  SoundComponent "{630F7B927FCF6E52}" {
+   Filenames {
+    "{03DDBF4ACA39FDF2}Sounds/Structures/Military/Radar/Structures_ApproachRadar_Generator.acp"
+   }
+   IncludeInactive 1
+   SoundPoints {
+    SoundPointInfo Fan {
+     Offset 1.1452 2.1056 1.8801
+    }
+   }
+  }
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{F23DCCEDB351435E}Assets/Structures/Military/Radar/ApproachRadar_01/ApproachRadar_TPN19_01_generator.xob"
+  }
+  SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+   Enabled 1
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+ {
+  $grp GenericEntity : "{B4DD2DC6D9B48EBC}Prefabs/Structures/Military/Radar/ApproachRadar_TPN19_01/ApproachRadar_TPN19_01_generator_light.et" {
+   {
+    ID "630F7B927FCF6E10"
+    coords -1.376 6.055 -2.422
+   }
+   {
+    ID "630F7B927FCF6E11"
+    coords -1.543 6.055 -2.422
+   }
+  }
+ }
+}

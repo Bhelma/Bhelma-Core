@@ -1,0 +1,106 @@
+Vehicle : "{D7663936ABF75FB1}Prefabs/Vehicles/Wheeled/S1203/S1203_cargo_base.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_VehicleSoundComponent "{55C2E66AD4EF2CA6}" {
+   Filenames + {
+    "{87E0968F67279DFE}Sounds/Weapons/Explosives/_SharedData/Weapons_Explosives_ATMine_Generic.acp" "{48F2916BF555AD1B}Sounds/BH_IED/BH_ied_proximity_beep.acp"
+   }
+  }
+  BH_IED_Controller "{68F52AFE0497ADFB}" {
+   m_fExplosionRadius 20
+   m_fExplosionDamage 4000
+  }
+  BH_IED_DisarmInteraction "{68F52AFE1D22E73D}" {
+  }
+  BH_IED_ProximityTrigger "{68F52AFE13D23ECE}" {
+  }
+  BH_VBIED "{68F52AFE10C82062}" {
+  }
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68F52AE13FDE5FA1}" {
+     SourceMaterial "S1203_body"
+     AssignedMaterial "{E8BC432D06D2BC25}Assets/Vehicles/Wheeled/S1203/Data/S1203_body_beige.emat"
+    }
+    MaterialAssignClass "{68F52AE13FDE5FB0}" {
+     SourceMaterial "S1203_body_int_E3C99AF8C813F493"
+     AssignedMaterial "{906442ACECFC0A03}Assets/Vehicles/Wheeled/S1203/Data/S1203_body_beige_int.emat"
+    }
+    MaterialAssignClass "{68F52AE13FDE5FB5}" {
+     SourceMaterial "S1203_interior"
+     AssignedMaterial "{4862B31100C0C353}Assets/Vehicles/Wheeled/S1203/Data/S1203_interior_beige.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_Image "{A2F3D9AEA296CFFD}UI/Textures/EditorPreviews/Vehicles/Wheeled/S1203/S1203_beige.edds"
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo SupplyStorage_Small_Row3_4_L {
+     Offset 0.02 -0.1088 -2.1087
+     Angles 85.4279 47.9194 -26.2712
+     Prefab "{D8C747CBFD867CDD}Prefabs/IED/BH_NokiaPhone_IED.et"
+    }
+    EntitySlotInfo SupplyStorage_Small_Row3_4_R {
+     Offset -0.0115 -0.0618 -1.8828
+     Angles 0 -4.4765 0
+     Prefab "{98EC9C526AFBA282}Prefabs/Weapons/Ammo/Ammo_Shell_82mm_HE_O832DU.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{68F52AFEE08EE3F3}" {
+     UIInfo SCR_ActionContextUIInfo "{68F52AFFC820B324}" {
+     }
+     ContextName "Desactivar_IED"
+     Position PointInfo "{68F52AFF065B1759}" {
+      Offset 0 0.3096 -2.1192
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    BH_DisarmAction_Blue "{68F52AFF69721C40}" {
+     ParentContextList {
+      "Desactivar_IED"
+     }
+     UIInfo UIInfo "{68F52AFF76A1A46F}" {
+      Name "Cortar Cable AZUL"
+     }
+     Duration 10
+    }
+    BH_DisarmAction_Green "{68F52AFF6FADCE0F}" {
+     ParentContextList {
+      "Desactivar_IED"
+     }
+     UIInfo UIInfo "{68F52AFF8744058D}" {
+      Name "Cortar Cable VERDE"
+     }
+     Duration 10
+    }
+    BH_DisarmAction_Red "{68F52AFF6CE7BC4B}" {
+     ParentContextList {
+      "Desactivar_IED"
+     }
+     UIInfo UIInfo "{68F52AFFC737CCC4}" {
+      Name "Cortar Cable ROJO"
+     }
+     Duration 10
+    }
+    BH_DisarmAction_Yellow "{68F52AFF6D41C77C}" {
+     ParentContextList {
+      "Desactivar_IED"
+     }
+     UIInfo UIInfo "{68F52AFFECF323F9}" {
+      Name "Cortar Cable AMARILLO"
+     }
+     Duration 10
+    }
+   }
+  }
+ }
+}

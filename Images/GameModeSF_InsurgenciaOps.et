@@ -1,0 +1,152 @@
+SCR_BaseGameMode : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
+ ID "56B2B479C6B96951"
+ components {
+  RHS_ANPRC152RadioComponent "{631B77682A6CC58B}" {
+   m_aFreqPresets {
+    RHS_RadioFrequencyPreset "{631B776803A04570}" {
+     m_iFrequency 40000
+    }
+   }
+  }
+  RHS_NightVisionComponent "{6330BC4B08249D66}" {
+   m_aGainLevels {
+   }
+  }
+  RHS_RadioAntennaComponent "{624D6E3BE54F4ACC}" {
+   m_bCanBeFolded 1
+  }
+  RHS_RadioComponent "{6330BC4B48AD4784}" {
+   m_iRadioType ANPRC152
+  }
+  SCR_ArsenalManagerComponent "{6120A34EB1E9BBEF}" {
+   m_sLoadoutSaveBlackListHolder "{8A608C6B516EFFCC}Configs/Arsenal/ArsenalLoadoutSaveBlacklists.conf"
+  }
+  SCR_CampaignBuildingManagerComponent "{6312F4925D41F5D7}" {
+  }
+  SCR_CommandingManagerComponent "{6312F49236E5893E}" {
+  }
+  SCR_CompositionSlotManagerComponent "{6312F49205139555}" {
+  }
+  SCR_DataCollectorComponent "{5ADE83EE64329989}" {
+   m_iOptionalKickingFriendlyPlayerKillPenalty 2
+   m_iOptionalKickingFriendlyAIKillPenalty 2
+   m_iOptionalKickingKickPenaltyLimit 3
+   m_iOptionalKickingBanDuration 300
+   m_iOptionalKickingPenaltySubtractionPeriod 1800
+   m_iOptionalKickingPenaltySubtractionPoints 1
+  }
+  SCR_DebriefingScreenComponent "{6312F4920FC964AD}" {
+   m_sHeaderTitle "Insurgencia Ops"
+   m_sHeaderSubtitle "Operaciones Militares"
+  }
+  SCR_EditorRespawnBriefingComponent "{622EED465FC70601}" {
+   m_sJournalConfigPath "{EBFEB0E907C97C37}Configs/Journal/JournalDefault.conf"
+  }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+   m_fDOTScale 0.5
+  }
+  SCR_GameModeSFManager "{5A96783ABCA252AE}" {
+   m_bDynamicDespawn 1
+  }
+  SCR_GroupsManagerComponent "{5706EC99934496F5}" {
+   m_sDefaultGroupPrefab "{8B4D49A9F324E7D6}Prefabs/Groups/PlayableGroup.et"
+   m_iPlayableGroupFrequencyOffset 1000
+   m_iPlayableGroupFrequencyMin 40000
+   m_aGroupFlags {
+   }
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{06F0B68B96CDC9C3}Configs/NameTags/BH_NametagFriendlies.conf"
+  }
+  SCR_NotificationSenderComponent "{56FA84B04BE7D4C0}" {
+   m_iKillFeedType FULL
+   m_iReceiveKillFeedType ALLIES_ONLY
+   m_aKillfeedReceiveTypeNames {
+    SCR_NotificationKillfeedreceiveTypeName "{62515AAC0574843D}" {
+    }
+   }
+  }
+  SCR_PlayerSpawnPointManagerComponent "{6312F492EC3C62E4}" {
+  }
+  SCR_RadialMenuItemsComponent "{6312F492F8C5E551}" {
+  }
+  SCR_RespawnBriefingComponent "{6312F492C08AA2E7}" {
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_MenuSpawnLogic "{5D36888CC966608A}" {
+   }
+  }
+  SCR_RespawnTimerComponent "{6312F492A3710D9E}" {
+   m_fRespawnTime 30
+  }
+  SCR_SpawnProtectionComponent "{6312F492B705AFE3}" {
+  }
+  SCR_TimeAndWeatherHandlerComponent "{622EED453109859C}" {
+   m_bRandomStartingDaytime 1
+   m_fDayTimeAcceleration 1.5
+   m_fNightTimeAcceleration 1.5
+   m_bRandomStartingWeather 1
+   m_bRandomWeatherChanges 1
+  }
+  SCR_TimedSpawnPointComponent "{6312F492BA4124A5}" {
+   m_fRespawnTime 5
+  }
+  SCR_WelcomeScreenComponent "{622EF9EA12DDA20B}" {
+   m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{622EF9EA1D18231B}" {
+    m_LeftColumn SCR_WelcomeScreenIntroductionContent "{622EF9EAE7AA3900}" {
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{622EFD435304F3F8}" {
+       m_sContentImage "{C26F110679C26A96}WorthyIslands/SatMap/WorthyIslands_SatMapV3.edds"
+       m_sContentTitleText "Situacion"
+       m_sContentDescriptionText "Worthy Islands, una vez un pacífico archipiélago, ha caído en la agitación después de que la OTAN estableciera una base militar en su territorio."\
+       "Esta instalación, destinada a asegurar una posición estratégica en la región, ha sido vista por algunos sectores de la población local como una amenaza a su independencia."\
+       "Esta desconfianza ha generado un movimiento insurgente compuesto por facciones locales que rechazan la presencia militar extranjera."\
+       "Con el tiempo, la insurgencia ha crecido en fuerza, armada por actores externos y apoyada por una parte significativa de la población local."\
+       "Los insurgentes han comenzado a tomar el control de pequeños pueblos, aprovechando su conocimiento del terreno y la simpatía de los habitantes para evitar ser detectados."\
+       "Su objetivo final parece ser la expulsión de las fuerzas de la OTAN y el establecimiento de un régimen autónomo."\
+       "El gobierno de Worthy Islands, debilitado por la división interna, ha pedido ayuda para restaurar el orden."
+      }
+     }
+    }
+    m_MiddleColumn SCR_WelcomeScreenIntroductionContent "{622EFD43305CF59B}" {
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{622EFD433EAA7E21}" {
+       m_sContentImage "{A90F8B329F2085E3}Images/Rangers-1.edds"
+       m_sContentTitleText "Seal´s"
+       m_sContentDescriptionText "Los Navy SEALs son una unidad de operaciones especiales de la Marina de los Estados Unidos, altamente entrenados para realizar misiones en tierra, mar y aire. Reconocidos por su resistencia física y mental, los SEALs operan en entornos de alto riesgo, con un enfoque en la precisión y la eficiencia. Especializados en operaciones encubiertas, rescates, sabotajes y combate antiterrorista, son desplegados para misiones críticas donde la velocidad y la discreción son esenciales. Su lema, \"The only easy day was yesterday\", refleja su compromiso inquebrantable con la excelencia."\
+       ""
+      }
+     }
+    }
+    m_RightColumn SCR_WelcomeScreenMissionObjectivesContent "{622EFD4310CAADB1}" {
+     m_aMissionObjectives {
+      SCR_WelcomeScreenMissionObjectives "{62430560F1828363}" {
+       m_sDescription "Leanse el briefing para un entendimiento de los recursos."
+      }
+      SCR_WelcomeScreenMissionObjectives "{622EFD431DD4F246}" {
+       m_sObjectiveQuadName "Ressuply"
+       m_sDescription "Localice suministros."
+      }
+      SCR_WelcomeScreenMissionObjectives "{622EFD43E90229A4}" {
+       m_sObjectiveQuadName "Custom"
+       m_sDescription "Destruya los arsenales de la insurgencia."
+      }
+      SCR_WelcomeScreenMissionObjectives "{622F054B4EC57BCC}" {
+       m_sObjectiveQuadName "Reconfigure"
+       m_sDescription "Restablezca de nuevo las comunicaciones"
+      }
+      SCR_WelcomeScreenMissionObjectives "{622F054B4F496860}" {
+       m_sObjectiveQuadName "Eliminate"
+       m_sDescription "Elimine al oficial."
+      }
+      SCR_WelcomeScreenMissionObjectives "{623696B82E25C2F3}" {
+       m_sObjectiveQuadName "Heal"
+       m_sDescription "Recupere la central electrica."
+      }
+     }
+    }
+   }
+  }
+ }
+ coords 1583.432 3.508 1626.281
+}

@@ -1,0 +1,117 @@
+SCR_BaseGameMode : "{ECEEDB2D3737204B}Prefabs/ScenarioFramework/GameModeSF.et" {
+ ID "56B2B479C6B96951"
+ components {
+  RHS_RadioAntennaComponent "{624D6E3BE54F4ACC}" {
+  }
+  SCR_ArsenalManagerComponent "{6120A34EB1E9BBEF}" {
+   m_sLoadoutSaveBlackListHolder "{8A608C6B516EFFCC}Configs/Arsenal/ArsenalLoadoutSaveBlacklists.conf"
+  }
+  SCR_CampaignBuildingManagerComponent "{62230B498B1087D9}" {
+   m_sFreeRoamBuildingClientTrigger "{5E191CEAF4B95816}Prefabs/MP/FreeRoamBuildingClientTrigger.et"
+   m_BudgetType CAMPAIGN
+   m_iCompositionRefundPercentage 100
+   m_OutlineManager SCR_CampaignBuildingCompositionOutlineManager "{623907A8A10F70D7}" {
+    m_sSlotFlatSmallLayout "{7FD4E6A668B4537A}Prefabs/Compositions/Misc/FreeRoamBuilding/Layouts/FRB_SlotFLatSmall.et"
+    m_sSlotFlatMediumLayout "{579FF731013436B5}Prefabs/Compositions/Misc/FreeRoamBuilding/Layouts/FRB_SlotFlatMedium.et"
+    m_sSlotFlatLargeLayout "{D06D9D47008E794F}Prefabs/Compositions/Misc/FreeRoamBuilding/Layouts/FRB_SlotRoadLarge.et"
+    m_sSlotRoadSmallLayout "{8DBA7E7BF662A393}Prefabs/Compositions/Misc/FreeRoamBuilding/Layouts/FRB_SlotRoadSmall.et"
+    m_sSlotRoadMediumLayout "{3A5E87ADA26C6940}Prefabs/Compositions/Misc/FreeRoamBuilding/Layouts/FRB_SlotRoadMedium.et"
+    m_sSlotRoadLargeLayout "{D06D9D47008E794F}Prefabs/Compositions/Misc/FreeRoamBuilding/Layouts/FRB_SlotRoadLarge.et"
+   }
+   m_sPrefabsToBuildResource "{D2527D9AA5B4A33E}Configs/Editor/PlaceableEntities/Compositions/Compositions_FreeRoamBuilding.conf"
+  }
+  SCR_CommandingManagerComponent "{6236B95929006F7A}" {
+  }
+  SCR_CompositionSlotManagerComponent "{623907A80B425A89}" {
+  }
+  SCR_EditorRespawnBriefingComponent "{622EED465FC70601}" {
+   m_sJournalConfigPath "{EBFEB0E907C97C37}Configs/Journal/JournalDefault.conf"
+  }
+  SCR_GameModeHealthSettings "{5A22E11F9ACBB1DF}" {
+   m_fDOTScale 0.5
+  }
+  SCR_GameModeSFManager "{5A96783ABCA252AE}" {
+   m_bDynamicDespawn 1
+  }
+  SCR_GroupsManagerComponent "{5706EC99934496F5}" {
+   m_sDefaultGroupPrefab "{8B4D49A9F324E7D6}Prefabs/Groups/PlayableGroup.et"
+   m_iPlayableGroupFrequencyOffset 1000
+   m_iPlayableGroupFrequencyMin 40000
+   m_aGroupFlags {
+   }
+  }
+  SCR_NametagConfigComponent "{571AA9E54FC9210D}" {
+   m_sConfigPath "{06F0B68B96CDC9C3}Configs/NameTags/BH_NametagFriendlies.conf"
+  }
+  SCR_NotificationSenderComponent "{56FA84B04BE7D4C0}" {
+   m_iKillFeedType FULL
+   m_aKillfeedReceiveTypeNames {
+    SCR_NotificationKillfeedreceiveTypeName "{62515AAC0574843D}" {
+    }
+   }
+  }
+  SCR_RespawnSystemComponent "{56B2B4793051E7C9}" {
+   m_SpawnLogic SCR_MenuSpawnLogic "{5D36888CC966608A}" {
+   }
+  }
+  SCR_TimeAndWeatherHandlerComponent "{622EED453109859C}" {
+   m_aStartingWeatherAndTime {
+    SCR_TimeAndWeatherState "{6239432E264B86EF}" {
+     m_sWeatherPresetName "Clear"
+     m_iStartingHour 7
+    }
+   }
+  }
+  SCR_WelcomeScreenComponent "{622EF9EA12DDA20B}" {
+   m_BaseLayout SCR_WelcomeScreenThreeHorizontalColumns "{622EF9EA1D18231B}" {
+    m_LeftColumn SCR_WelcomeScreenIntroductionContent "{622EF9EAE7AA3900}" {
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{622EFD435304F3F8}" {
+       m_sContentImage "{6EB44A780AF7DDDF}UI/Textures/Map/worlds/EveronRasterized.edds"
+       m_sContentTitleText "Situacion"
+       m_sContentDescriptionText " La 75th Rangers, una de las unidades de élite del ejército estadounidense, fue desplegada en la isla de Everon, ubicada en el Atlántico Norte. La isla, que anteriormente había sido una nación pacífica, ha caído bajo el control de un grupo paramilitar extremista que amenaza con desestabilizar la región. La misión de los Rangers es clara: retomar el control de Everon y neutralizar a las fuerzas enemigas."
+      }
+     }
+    }
+    m_MiddleColumn SCR_WelcomeScreenIntroductionContent "{622EFD43305CF59B}" {
+     m_aIntroduction {
+      SCR_WelcomeScreenIntroduction "{622EFD433EAA7E21}" {
+       m_sContentImage "{A90F8B329F2085E3}Images/Rangers-1.edds"
+       m_sContentTitleText "75th Rangers"
+       m_sContentDescriptionText "Para completar esta misión deberán utilizar todo su ingenio y todos los recursos con los que disponen. Dichos recursos no son infinitos, asi que aprovéchelos."\
+       "Deberan comenzar la misión, estableciendo una cabeza de playa en cualquier ciudad o pueblo con puerto, es de su libre elección, localizaran un camión de construcción, que no se lo destruyan, por que sin el, no podrán construir su puestos avanzados y dependeran únicamente de su base inicial ubicada en un islote exterior."
+      }
+     }
+    }
+    m_RightColumn SCR_WelcomeScreenMissionObjectivesContent "{622EFD4310CAADB1}" {
+     m_aMissionObjectives {
+      SCR_WelcomeScreenMissionObjectives "{62430560F1828363}" {
+       m_sDescription "Leanse el briefing para un entendimiento de los recursos."
+      }
+      SCR_WelcomeScreenMissionObjectives "{622EFD431DD4F246}" {
+       m_sObjectiveQuadName "Ressuply"
+       m_sDescription "Localice el camion de contruccion para empezar la mision en cualquier ciudad o pueblo con puerto."
+      }
+      SCR_WelcomeScreenMissionObjectives "{622EFD43E90229A4}" {
+       m_sObjectiveQuadName "Seize"
+       m_sDescription "Busque en las ciudades posibles suministros."
+      }
+      SCR_WelcomeScreenMissionObjectives "{622F054B4EC57BCC}" {
+       m_sObjectiveQuadName "Reconfigure"
+       m_sDescription "Restablezca de nuevo las comunicaciones"
+      }
+      SCR_WelcomeScreenMissionObjectives "{622F054B4F496860}" {
+       m_sObjectiveQuadName "Eliminate"
+       m_sDescription "Capture o elimine al oficial."
+      }
+      SCR_WelcomeScreenMissionObjectives "{623696B82E25C2F3}" {
+       m_sObjectiveQuadName "Heal"
+       m_sDescription "Entregue suministros de Clase I, II, VIII y X a la poblacion civil."
+      }
+     }
+    }
+   }
+  }
+ }
+ coords 7114.537 75.238 6401
+}

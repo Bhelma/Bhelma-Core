@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{3A81DB9FBD74B239}Prefabs/Vehicles/Wheeled/M998/VehParts/BH_IED_M1025_roof.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

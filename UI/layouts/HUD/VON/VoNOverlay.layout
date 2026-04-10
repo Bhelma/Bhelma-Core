@@ -1,0 +1,29 @@
+FrameWidgetClass {
+ {
+  VerticalLayoutWidgetClass "{59389903A80C9C04}" {
+   Prefab "{59389903A80C9C04}"
+   {
+    FrameWidgetClass "{000000006691B0F4}" {
+     Prefab "{000000006691B0F4}"
+     {
+      VerticalLayoutWidgetClass "{593899036CFAA424}" {
+       Prefab "{593899036CFAA424}"
+       {
+        HorizontalLayoutWidgetClass "{0000000060427AFD}" {
+         Prefab "{0000000060427AFD}"
+         {
+          FrameWidgetClass "{56DEA1E8EFA09F0D}" {
+           Prefab "{56DEA1E8EFA09F0D}"
+           "Is Enabled" 1
+           "Is Visible" 1
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

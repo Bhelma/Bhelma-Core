@@ -1,0 +1,72 @@
+BehaviorTree {
+ Name "AI/BehaviorTrees/Chimera/Group/ActivityIdle.bt"
+ Nodes {
+  RootNode Root {
+   Name "Root"
+   EditorPos 47 -32
+   Nodes {
+    Sequence Sequence {
+     Name "Sequence"
+     EditorPos 11.495 192.514
+     Nodes {
+      AITaskIdle Idle {
+       Name "WatchPause"
+       EditorPos -258.387 393.099
+       Period 8
+       PeriodRandom 4
+      }
+      Parallel Parallel {
+       Name "ActiveWatch"
+       EditorPos 31.833 395.018
+       Nodes {
+        SCR_AISendGoalMessage_Suppress "SCR_AI Send Goal Message_ Suppress" {
+         Name "WatchSurround"
+         EditorPos -142.222 652.636
+         InPorts {
+          SingleInputPortContainer SingleInputPortContainer {
+           Port -1
+           PortName "Receiver"
+          }
+          SingleInputPortContainer SingleInputPortContainer {
+           Port -1
+           PortName "PriorityLevel"
+          }
+          SingleInputPortContainer SingleInputPortContainer {
+           Port -1
+           PortName "IsWaypointRelated"
+          }
+          SingleInputPortContainer SingleInputPortContainer {
+           Port -1
+           PortName "SuppressionVolume"
+          }
+          SingleInputPortContainer SingleInputPortContainer {
+           Port -1
+           PortName "Duration_s"
+          }
+          SingleInputPortContainer SingleInputPortContainer {
+           Port -1
+           PortName "FireRate"
+          }
+         }
+         m_fPriorityLevel 0.2
+        }
+        AITaskIdle Idle {
+         Name "WatchDuration"
+         EditorPos 135.85 661.272
+         Period 5
+         PeriodRandom 2
+        }
+       }
+       UseChildResult 1
+      }
+      AITaskReturnState "Return State" {
+       Name "Return State"
+       EditorPos 379.885 417.015
+       Result RUNNING
+      }
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,12 @@
+RHS_Tank : "{543A50BF3A42AD47}Prefabs/Vehicles/Core/Wheeled_APC_Base.et" {
+ ID "5CDE8068D49AAEBB"
+ components {
+  SCR_VehicleDamageManagerComponent "{141326E9FD94FE40}" {
+   "Additional hit zones" {
+    SCR_FlammableHitZone Hull {
+     MaxHealth 7500
+    }
+   }
+  }
+ }
+}

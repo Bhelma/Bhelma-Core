@@ -1,0 +1,10 @@
+FrameWidgetClass {
+ {
+  HorizontalLayoutWidgetClass "{5D46D3A575736986}" {
+   Prefab "{5D46D3A575736986}"
+   "Is Enabled" 0
+   "Is Visible" 0
+   Opacity 0
+  }
+ }
+}

@@ -1,0 +1,42 @@
+GenericEntity Area1 : "{C72F956E4AC6A6E7}Prefabs/Systems/ScenarioFramework/Components/Area.et" {
+ coords 2484.252 79.164 1775.993
+ {
+  GenericEntity Layer1 : "{5F9FFF4BF027B3A3}Prefabs/Systems/ScenarioFramework/Components/Layer.et" {
+   coords -0.058 0 -0.395
+   {
+    GenericEntity SlotAI1 : "{8D43830F02C3F114}Prefabs/Systems/ScenarioFramework/Components/SlotAI.et" {
+     components {
+      SCR_ScenarioFrameworkSlotAI "{5A26B3E02AC77BA0}" {
+       m_sObjectToSpawn "{0D10CCEEC7B3EC34}Prefabs/Groups/OPFOR/Group_USSR_PlatoonHQ.et"
+       m_WaypointSet SCR_ScenarioFrameworkWaypointSet "{66DF184982AC39BD}" {
+        m_aLayerName {
+         "SlotWaypoint1"
+        }
+       }
+      }
+     }
+     coords 0.091 0 -5.66
+    }
+    GenericEntity Slot1 : "{AA01691FDC4E9167}Prefabs/Systems/ScenarioFramework/Components/Slot.et" {
+     components {
+      SCR_ScenarioFrameworkSlotBase "{5A22E1D67E712EC8}" {
+       m_sObjectToSpawn "{B70E6D12A8EC2410}Prefabs/Vehicles/Wheeled/Ural4320/Ural4320_FIA_transport_covered.et"
+      }
+     }
+     coords -1.142 0.01 0.343
+     angles 6.219 -27.943 -6.737
+    }
+    GenericEntity SlotWaypoint1 : "{EBD91177954E8236}Prefabs/Systems/ScenarioFramework/Components/SlotWaypoint.et" {
+     components {
+      SCR_ScenarioFrameworkSlotWaypoint "{5EEEE11FAD8EE85C}" {
+       m_Waypoint SCR_ScenarioFrameworkWaypointLoiterCO "{66DF1849AD3ECDDB}" {
+        m_fCompletionRadius 25
+       }
+      }
+     }
+     coords 9.508 0 -6.514
+    }
+   }
+  }
+ }
+}

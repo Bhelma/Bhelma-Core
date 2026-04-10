@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{E06B2F4B00343A36}Prefabs/Structures/Walls/BarbedWire/NetFence_USSR_01/NetFence_USSR_01_base.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

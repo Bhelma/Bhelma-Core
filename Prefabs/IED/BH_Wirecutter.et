@@ -1,0 +1,246 @@
+GenericEntity {
+ ID "68D537C1DF1C3261"
+ components {
+  Persistence "{68D537CBB7EB3A02}" {
+  }
+  BH_CuttToolComponent "{68E14BB319342A36}" {
+   m_eAnimVariable ADRIANOV
+   m_eUseMask 7
+  }
+  BH_WireCutter "{68D537CBEA53223C}" {
+  }
+  InventoryItemComponent "{68D537CBC2540928}" {
+   Attributes SCR_ItemAttributeCollection "{68D537C64ADCCEDB}" {
+    ItemDisplayName SCR_InventoryUIInfo "{68D537C66FE2F6DC}" {
+     Name "Herramienta Multiusos"
+     Description "Herramienta muliusos de uso militar."
+     m_aItemHints {
+      SCR_SupplyAvailableItemHintUIInfo "{68D537C69EABE23D}" {
+       Name "#AR-Item_SupplyConsumer_Hint1"
+       Icon "{8EB808BFA227C080}UI/Textures/Icons/InventoryHints/InventoryHint_SuppliesStored.edds"
+       m_bHideInArsenal 1
+      }
+      SCR_InventoryItemHintUIInfo "{68D537C697B0A3A1}" {
+       Name "#AR-Item_RepairKit_Hint1"
+       Icon "{889DEEAE12D64559}UI/Imagesets/SupportStations/InventoryHints.imageset"
+       IconSetName "repair-1"
+      }
+      SCR_InventoryItemHintUIInfo "{68D537C6959EA1F5}" {
+       Name "#AR-Item_RepairKit_Hint2"
+       Icon "{889DEEAE12D64559}UI/Imagesets/SupportStations/InventoryHints.imageset"
+       IconSetName "repair-2"
+      }
+      SCR_InventoryItemHintUIInfo "{68D537C6ABC0633A}" {
+       Name "#AR-Item_RepairKit_Hint3"
+       Icon "{889DEEAE12D64559}UI/Imagesets/SupportStations/InventoryHints.imageset"
+       IconSetName "repair-3"
+      }
+     }
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{68D537C112A2A016}" {
+     Weight 0.2
+     SizeSetupStrategy Manual
+     ItemDimensions 5 5 5
+     ItemVolume 50
+    }
+    ItemAnimationAttributes ItemAnimationAttributes "{68D537C13F66637A}" {
+     AnimationAttachments {
+      AnimationAttachmentInfo "{68D537C14BAD97AA}" {
+       AnimGraph "{82906ACD75DF8523}Assets/Items/Equipment/workspaces/Flashlight_MX991.agr"
+       AnimInstance "{903E4A0B96B34B8F}Assets/Items/Equipment/workspaces/MX991_player.asi"
+       BindingName "Gadget"
+      }
+     }
+     HandAdditiveRotation -5 45 45
+     HandAdditiveTranslation 0.025 0.11 0.05
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{68D537C17F234694}" {
+      CameraPreset Top
+      CameraOrbitAngles 0 90 90
+      CameraDistanceToItem 0.35
+      ItemRenderRotation 85 0 0
+     }
+     CharacterModifierAttributes "{68D537C1714ACE9F}" {
+      SpeedLimit 9999
+      ADSSpeedLimit 9999
+      SpeedLimitItemPrimaryAction 9999
+      SpeedLimitHighready 9999
+      CanBeEquippedInVehicle 0
+     }
+    }
+    CommonItemType "FLASHLIGHT"
+    m_Size SLOT_1x1
+    m_eQuickSlotSize SLOT_1x1
+    m_bStackable 0
+   }
+  }
+  MeshObject "{68D537CBDE8EAACA}" {
+   Object "{E16B44A8CB1A0E48}Assets/Items/BH_Herramienta.xob"
+   LODFactors {
+    1 1 1 1 1
+   }
+   InheritVisibility 1
+  }
+  RigidBody "{68D537CBD0EC1EE0}" {
+   ModelGeometry 1
+  }
+  SCR_RepairSupportStationComponent "{68D537CBE7E0C7C4}" {
+   m_sOnUseSoundEffectEventName "SOUND_VEHICLE_REPAIR_DONE"
+   m_fRange -1
+   m_bUseRangeBoundingBox 1
+   m_sOverrideUserActionName "#AR-SupportStation_EmergencyRepair_ActionName"
+   m_iSupplyCostDamageHealed 10
+   m_fMaxHealScaled 0.05
+   m_aDoTTypesHealed {
+    FIRE
+   }
+   m_iSupplyCostPerFireRateReduction 0
+  }
+  SCR_ResourceComponent "{68D537CA0269C057}" {
+   m_aConsumers {
+    SCR_ResourceConsumer "{68D537C525138D31}" {
+     m_sDebugName "Gadget - Consumer"
+     m_eResourceRights ALL
+     m_eGeneratorIdentifier DEFAULT
+     m_fResourceRange 15
+     m_ContainerQueue SCR_ResourceConsumerContainerQueue "{68D537C558399CDF}" {
+      m_StoragePolicies {
+       SCR_ResourceConsumerStoragePolicy "{68D537C560E6C936}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueueExtended "{68D537C575272B6A}" {
+        }
+       }
+       SCR_ResourceConsumerStoragePolicy "{68D537C566E7B4DB}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueueExtended "{68D537C58989DFE7}" {
+        }
+        m_eStorageType STORED
+       }
+       SCR_ResourceConsumerStoragePolicy "{68D537C567678155}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueueExtended "{68D537C596762C95}" {
+        }
+        m_eStorageType CARGO_PROP
+       }
+       SCR_ResourceConsumerStoragePolicy "{68D537C565BCBCD4}" {
+        m_StorageQueue SCR_ResourceConsumerContainerStorageQueueExtended "{68D537C5AA467B52}" {
+        }
+        m_eStorageType CARGO_VEHICLE
+       }
+      }
+     }
+    }
+   }
+  }
+  SCR_SoundDataComponent "{68D537CA0470A4F4}" {
+   m_aAudioSourceConfiguration {
+    SCR_AudioSourceConfiguration "{68D537C4089ECE40}" {
+     m_sSoundProject "{7863D1DFA2EFE985}Sounds/Items/_SharedData/PickUp/Items_PickUp_RepairKit.acp"
+     m_sSoundEventName "SOUND_PICK_UP"
+    }
+    SCR_AudioSourceConfiguration "{68D537C4080051E5}" {
+     m_sSoundProject "{7863D1DFA2EFE985}Sounds/Items/_SharedData/PickUp/Items_PickUp_RepairKit.acp"
+     m_sSoundEventName "SOUND_EQUIP"
+    }
+    SCR_AudioSourceConfiguration "{68D537C4085C699F}" {
+     m_sSoundProject "{7FD0A9094C3D8B91}Sounds/Items/_SharedData/Drop/Items_Drop_RepairKit.acp"
+     m_sSoundEventName "SOUND_DROP"
+    }
+   }
+  }
+  SCR_SupportStationGadgetComponent "{68D537C46953C999}" {
+   m_eAnimVariable ADRIANOV
+   m_aSupportStationTypes {
+    REPAIR
+   }
+  }
+  ActionsManagerComponent "{68D537CA2022343F}" {
+   ActionContexts {
+    UserActionContext "{68D537C4C3A1928F}" {
+     ContextName "default"
+     Position PointInfo "{68D537C4D3B580A1}" {
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    SCR_PickUpItemAction "{68D537C7085C9A02}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{68D537C7100CCAE2}" {
+      Name "#AR-Inventory_PickUp"
+      m_sIconName "pick-up"
+     }
+    }
+    SCR_EquipItemAction "{68D537C74F58501F}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo SCR_ActionUIInfo "{68D537C75F290239}" {
+      Name "#AR-Inventory_Equip"
+      m_sIconName "pick-up"
+     }
+     ActionTitle "Equip Item"
+     "Sort Priority" 2
+    }
+    BH_DisarmAction_Blue "{68D537C7C9131FC4}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{68D537C7C167E91E}" {
+      Name "Cortar Cable AZUL"
+     }
+     Duration 15
+    }
+    BH_DisarmAction_Green "{68D537C7CE7484E0}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{68D537C7DFA8F3CF}" {
+      Name "Cortar Cable VERDE"
+     }
+     Duration 15
+    }
+    BH_DisarmAction_Red "{68D537C7CCC5472C}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{68D537C7D525F7D5}" {
+      Name "Cortar Cable ROJO"
+     }
+     Duration 15
+    }
+    BH_DisarmAction_Yellow "{68D537C7CD0AA040}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{68D537C7E7824AE3}" {
+      Name "Cortar Cable AMARILLO"
+     }
+     Duration 15
+    }
+   }
+  }
+  GadgetGamepadEffectsManagerComponent "{68D537CA3B75AD12}" {
+   OwnedEffects {
+    GamepadTriggerEffect "{68D537C48A285672}" {
+     Name "ADS"
+     Priority 30
+     TriggerType Left
+    }
+    GamepadTriggerEffect "{68D537C497CD6960}" {
+     Name "Charged"
+     Priority 30
+    }
+   }
+  }
+  RplComponent "{68D537CA33868FFA}" {
+   "Rpl State Override" Runtime
+   "Parent Node From Parent Entity" 0
+  }
+  Hierarchy "{68D537CA31495444}" {
+  }
+ }
+ coords 0 0 0
+ angles 22.688 94.321 -27.994
+ scale 0.445
+}

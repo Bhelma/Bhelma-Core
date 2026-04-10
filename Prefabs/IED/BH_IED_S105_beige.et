@@ -1,0 +1,86 @@
+Vehicle : "{54C3CC22DEBD57BE}Prefabs/Vehicles/Wheeled/S105/S105_beige.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_VehicleSoundComponent "{55C2E66AD4EF2CA6}" {
+   Filenames + {
+    "{87E0968F67279DFE}Sounds/Weapons/Explosives/_SharedData/Weapons_Explosives_ATMine_Generic.acp" "{48F2916BF555AD1B}Sounds/BH_IED/BH_ied_proximity_beep.acp"
+   }
+  }
+  BH_IED_Controller "{68F139F3FAC6ED99}" {
+   m_fExplosionRadius 20
+   m_fExplosionDamage 4000
+  }
+  BH_IED_DisarmInteraction "{68F139F3FB223523}" {
+  }
+  BH_IED_ProximityTrigger "{68F139F3F9B43BEE}" {
+   m_bDetectInfantry 0
+  }
+  BH_VBIED "{68F139FF522F0EBA}" {
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo SupplyStorage_01 {
+     Offset 0.1771 -1.3987 -0.0039
+     Angles 4.2892 86.9558 93.9815
+     Prefab "{98EC9C526AFBA282}Prefabs/Weapons/Ammo/Ammo_Shell_82mm_HE_O832DU.et"
+    }
+    EntitySlotInfo SupplyStorage_02 {
+     Offset 0.1006 -1.4322 -0.0064
+     Angles 1.4526 -6.104 106.0538
+     Prefab "{D8C747CBFD867CDD}Prefabs/IED/BH_NokiaPhone_IED.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{68F139FFD7765D4F}" {
+     UIInfo SCR_ActionContextUIInfo "{68F139FBA8BC2A57}" {
+     }
+     ContextName "Desactivar_IED"
+     Position PointInfo "{68F139FFEC97E4A1}" {
+      Offset -0.0064 0.2813 2.1144
+     }
+     Radius 0.2
+    }
+   }
+   additionalActions {
+    BH_DisarmAction_Blue "{68F139FE0DDF10DA}" {
+     ParentContextList {
+      "Desactivar_IED"
+     }
+     UIInfo UIInfo "{68F139FE1DE38E1A}" {
+      Name "Cortar Cable AZUL"
+     }
+     Duration 10
+    }
+    BH_DisarmAction_Green "{68F139FE022C50D5}" {
+     ParentContextList {
+      "Desactivar_IED"
+     }
+     UIInfo UIInfo "{68F139FE39B68147}" {
+      Name "Cortar Cable VERDE"
+     }
+     Duration 10
+    }
+    BH_DisarmAction_Red "{68F139FE00A374EE}" {
+     ParentContextList {
+      "Desactivar_IED"
+     }
+     UIInfo UIInfo "{68F139FE4E069CB8}" {
+      Name "Cortar Cable ROJO"
+     }
+     Duration 10
+    }
+    BH_DisarmAction_Yellow "{68F139FE01540C85}" {
+     ParentContextList {
+      "Desactivar_IED"
+     }
+     UIInfo UIInfo "{68F139FE581E65FF}" {
+      Name "Cortar Cable AMARILLO"
+     }
+     VisibilityRange 10
+    }
+   }
+  }
+ }
+}

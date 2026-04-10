@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{6F5DE564D3E6CC90}Assets/Vehicles/Wheeled/M998/Data/BH_IED_HMMWV_Body_Int.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

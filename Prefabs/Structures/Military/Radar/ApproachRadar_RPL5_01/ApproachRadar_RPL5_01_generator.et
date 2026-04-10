@@ -1,0 +1,55 @@
+GenericEntity : "{FCAEC0CB2F8FF8BD}Prefabs/Structures/Military/Radar/ApproachRadar_Prop_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  SignalsManagerComponent "{62652D2745FBAB14}" {
+  }
+  SoundComponent "{62652D2745FBAB18}" {
+   Filenames {
+    "{03DDBF4ACA39FDF2}Sounds/Structures/Military/Radar/Structures_ApproachRadar_Generator.acp"
+   }
+   IncludeInactive 1
+   SoundPoints {
+    SoundPointInfo Fan {
+     Offset -0.7 1.8 2.5
+    }
+   }
+  }
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{A2DE69A75CFA6D5B}Assets/Structures/Military/Radar/ApproachRadar_01/ApproachRadar_RPL5_01_generator.xob"
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   ResponseIndex "Normal"
+  }
+  SCR_DestructionMultiPhaseComponent "{5624A88D86EFE8BA}" {
+   Enabled 1
+   m_fBaseHealth 10000
+   m_fForceToDamageScale 100
+   m_fDamageThresholdMaximum 50000
+   m_DestroySpawnObjects {
+    SCR_DebrisSpawnable "{62672C99C7ACF783}" {
+     m_ModelPrefabs {
+      "{BB526512FF6F5F5D}Assets/Structures/Military/Radar/ApproachRadar_01/Dst/ApproachRadar_RPL5_01_antenna_dst_01_debris_02.xob" "{BB526512FF6F5F5D}Assets/Structures/Military/Radar/ApproachRadar_01/Dst/ApproachRadar_RPL5_01_antenna_dst_01_debris_02.xob" "{CC580D9A0BCDB02D}Assets/Structures/Military/Radar/ApproachRadar_01/Dst/ApproachRadar_RPL5_01_antenna_dst_01_debris_03.xob"
+     }
+     m_fMass 50
+     m_eMaterialSoundType METAL_HEAVY
+    }
+    SCR_ParticleSpawnable "{62672C9E643DF158}" {
+     m_Particle "{51AD00C117DF93E2}Particles/Props/Smoke_Generator_big.ptc"
+    }
+    SCR_ParticleSpawnable "{62672C9E5781361A}" {
+     m_Particle "{70D6B6836428988B}Particles/Props/Explosion_RPL5.ptc"
+    }
+   }
+   m_bDeleteAfterFinalPhase 0
+   m_aDamagePhases {
+    SCR_DamagePhaseData "{62672C9A11155D0D}" {
+     m_fPhaseHealth 10000
+     m_PhaseModel "{379DA7C5EF967C46}Assets/Structures/Military/Radar/ApproachRadar_01/Dst/ApproachRadar_RPL5_01_generator_wreck.xob"
+    }
+   }
+  }
+  RplComponent "{5624A88DC2D9928D}" {
+   Enabled 1
+  }
+ }
+}

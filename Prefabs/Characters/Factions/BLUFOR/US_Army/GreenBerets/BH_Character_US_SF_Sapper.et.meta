@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{F09BB258C958FAB4}Prefabs/Characters/Factions/BLUFOR/US_Army/GreenBerets/BH_Character_US_SF_Sapper.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,518 @@
+AudioClass {
+ vars {
+  VariableClass "7198" {
+   id 7198
+   name "BeepActive"
+   version 5
+   tl -34.747 -216.478
+  }
+ }
+ sounds {
+  SoundClass "3081" {
+   id 3081
+   name "BH_Sound_Beep"
+   version 5
+   tl 212.448 -400.715
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "7198:65" {
+       id 7198
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "2066:65" {
+       id 2066
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   volume_dB -9
+   outState 6155
+   outStatePort 12295
+  }
+  SoundClass "20489" {
+   id 20489
+   name "BH_Activated_Sound"
+   version 5
+   tl 256.401 -38.141
+   ins {
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "17426:65" {
+       id 17426
+       port 65
+      }
+     }
+    }
+   }
+   outState 6155
+   outStatePort 12295
+  }
+  SoundClass "21513" {
+   id 21513
+   name "BH_Desactivated_Sound"
+   version 5
+   tl 262.691 244.196
+   ins {
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "18450:65" {
+       id 18450
+       port 65
+      }
+     }
+    }
+   }
+   volume_dB 3
+   outState 6155
+   outStatePort 12295
+  }
+  SoundClass "22537" {
+   id 22537
+   name "BH_Ring_Sound"
+   version 5
+   tl 268.303 519.954
+   ins {
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "19474:65" {
+       id 19474
+       port 65
+      }
+     }
+    }
+   }
+   outState 6155
+   outStatePort 12295
+  }
+  SoundClass "27657" {
+   id 27657
+   name "BH_Tower_Sabotaged"
+   version 5
+   tl 223.435 -711.496
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "26642:65" {
+       id 26642
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    1 0
+   }
+   volume_dB -12
+   outState 6155
+   outStatePort 12295
+  }
+ }
+ mixers {
+  MixerClass "6155" {
+   id 6155
+   name "OutputState 6"
+   version 4
+   tl 556.953 -37.232
+   res "{B764D803219C775E}Sounds/FinalMix.afm"
+   ins {
+    ConnectionsClass "con:12295" {
+     id 12295
+     links {
+      ConnectionClass "3081:65" {
+       id 3081
+       port 65
+      }
+      ConnectionClass "20489:65" {
+       id 20489
+       port 65
+      }
+      ConnectionClass "21513:65" {
+       id 21513
+       port 65
+      }
+      ConnectionClass "22537:65" {
+       id 22537
+       port 65
+      }
+      ConnectionClass "27657:65" {
+       id 27657
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    16 0
+   }
+   path "{B764D803219C775E}Sounds/FinalMix.afm"
+   inputs {
+    "WPN_Handling" "WPN_Shots" "WPN_Explosions" "WNP_BulletHits" "CHAR" "ENV_AMB_2D" "VEH_Animations" "Impacts" "Dialog" "ENV_Doors" "VEH_Engine" "VEH_Tires" "VON" "SFX" "SFX_Reverb_OBSOLETE" "VON_Reverb_Small" "Dialog_Reverb" "Impacts_EXT" "ENV_AMB_3D" "WPN_SonicCracks" "CHAR_Gear" "PA" "SFX_Reverb_Exterior" "ENV_AMB_3D_Reverb_Exterior" "SFX_Direct" "SFX_Reverb_Small" "SFX_Reverb_Medium" "SFX_Reverb_Large" "WPN_Shots_Player" "Dialog_Reverb_Small" "Dialog_Reverb_Medium" "Dialog_Reverb_Large" "WPN_TravelingProjectile" "Dialog_Delay_Exterior" "SFX_Reverb_InCabin" "VON_Reverb_Medium" "VON_Reverb_Large"
+   }
+   visiblePorts {
+    12295
+   }
+  }
+ }
+ shaders {
+  ShaderClass "2066" {
+   id 2066
+   name "Shader 2"
+   version 5
+   tl -46.303 -403.015
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "4124:65" {
+       id 4124
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "5139:65" {
+       id 5139
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "1028:65" {
+       id 1028
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+  }
+  ShaderClass "17426" {
+   id 17426
+   name "Shader 17"
+   version 5
+   tl -4.132 -43.431
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "10268:65" {
+       id 10268
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "9235:65" {
+       id 9235
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "8196:65" {
+       id 8196
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+  }
+  ShaderClass "18450" {
+   id 18450
+   name "Shader 18"
+   version 5
+   tl 11.738 242.229
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "12316:65" {
+       id 12316
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "13331:65" {
+       id 13331
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "11268:65" {
+       id 11268
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+  }
+  ShaderClass "19474" {
+   id 19474
+   name "Shader 19"
+   version 5
+   tl 19.673 525.244
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "15388:65" {
+       id 15388
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "16403:65" {
+       id 16403
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "14340:65" {
+       id 14340
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+  }
+  ShaderClass "26642" {
+   id 26642
+   name "Shader 26"
+   version 5
+   tl -38.765 -722.996
+   ins {
+    ConnectionsClass "con:0" {
+     id 0
+     links {
+      ConnectionClass "24604:65" {
+       id 24604
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:1" {
+     id 1
+     links {
+      ConnectionClass "25619:65" {
+       id 25619
+       port 65
+      }
+     }
+    }
+    ConnectionsClass "con:64" {
+     id 64
+     links {
+      ConnectionClass "23556:65" {
+       id 23556
+       port 65
+      }
+     }
+    }
+   }
+   pi {
+    3 0
+   }
+  }
+ }
+ amplitudes {
+  AmplitudeClass "5139" {
+   id 5139
+   name "Amplitude 5"
+   version 5
+   tl -316.949 -235.247
+   curve Logarithm
+   outerRange 15
+  }
+  AmplitudeClass "9235" {
+   id 9235
+   name "Amplitude 9"
+   version 5
+   tl -327.747 119.897
+   curve Logarithm
+   outerRange 15
+  }
+  AmplitudeClass "13331" {
+   id 13331
+   name "Amplitude 13"
+   version 5
+   tl -330.392 388.365
+   curve Logarithm
+   outerRange 15
+  }
+  AmplitudeClass "16403" {
+   id 16403
+   name "Amplitude 16"
+   version 5
+   tl -321.135 681.96
+   curve Logarithm
+   outerRange 20
+  }
+  AmplitudeClass "25619" {
+   id 25619
+   name "Amplitude 25"
+   version 5
+   tl -305.565 -558.546
+  }
+ }
+ banks_local {
+  BankLocalClass "1028" {
+   id 1028
+   name "BH_IED_ProximityAlert"
+   version 7
+   tl -323.452 -405.315
+   "Terminate Loop" 0
+   Samples {
+    AudioBankSampleClass "BH_Beep.wav" {
+     Filename "{5AF22C80B50FCF28}Sounds/BH_IED/BH_Beep.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "8196" {
+   id 8196
+   name "BH_Activated_Bank"
+   version 7
+   tl -329.07 -44.093
+   Samples {
+    AudioBankSampleClass "BH_Sound_Activated_Inh.wav" {
+     Filename "{6289E6DC0912BD5E}Sounds/BH_IED/BH_Sound_Activated_Inh.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "11268" {
+   id 11268
+   name "BH_Desactivated_Bank"
+   version 7
+   tl -327.747 236.277
+   Samples {
+    AudioBankSampleClass "BH_Sound_Desactivated_Inh.wav" {
+     Filename "{A4395D52D78FE51F}Sounds/BH_IED/BH_Sound_Desactivated_Inh.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "14340" {
+   id 14340
+   name "BH_Ring_Bank"
+   version 7
+   tl -325.103 517.97
+   Samples {
+    AudioBankSampleClass "BH_Sound_Ring.wav" {
+     Filename "{C2C739B9063ABEDE}Sounds/BH_IED/BH_Sound_Ring.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+   }
+  }
+  BankLocalClass "23556" {
+   id 23556
+   name "BH_IED_Sabutage_Bank"
+   version 7
+   tl -312.063 -727.605
+   "Loop count" 255
+   "Infinite loop" 1
+   Samples {
+    AudioBankSampleClass "BH_IED_Saboutage.wav" {
+     Filename "{3BD86EDAEA73AB94}Sounds/BH_IED/BH_IED_Saboutage.wav"
+     Probability 100
+     Index 0
+     SampleMetadata ""
+    }
+   }
+  }
+ }
+ spatialities {
+  SpatialityClass "4124" {
+   id 4124
+   name "Spatiality 4"
+   version 5
+   tl -319.124 -327.495
+   spatialFactor 1
+  }
+  SpatialityClass "10268" {
+   id 10268
+   name "Spatiality 10"
+   version 5
+   tl -329.07 39.225
+   spatialFactor 1
+  }
+  SpatialityClass "12316" {
+   id 12316
+   name "Spatiality 12"
+   version 5
+   tl -327.747 311.66
+   spatialFactor 1
+  }
+  SpatialityClass "15388" {
+   id 15388
+   name "Spatiality 15"
+   version 5
+   tl -319.812 598.643
+   spatialFactor 1
+  }
+  SpatialityClass "24604" {
+   id 24604
+   name "Spatiality 24"
+   version 5
+   tl -312.465 -645.946
+  }
+ }
+ version 1
+}

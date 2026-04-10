@@ -1,0 +1,34 @@
+GenericEntity : "{CCFA1D2A74D3F13E}Prefabs/Props/Military/Arsenal/AmmoBoxes/AmmoBoxArsenal_Weapon_Base.et" {
+ ID "F0DBA538AC2A0552"
+ components {
+  MeshObject "{5872F0EB7FA40561}" {
+   Object "{819ED3266EE5113B}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Weapon_01.xob"
+   Materials {
+    MaterialAssignClass "{6292B67A5AE711A8}" {
+     SourceMaterial "EquipmentBoxWooden_Weapon_01"
+     AssignedMaterial "{6864083D30F4F63D}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/Data/EquipmentBoxWooden_Weapon_01_FIA.emat"
+    }
+    MaterialAssignClass "{6292B67A5AE71186}" {
+     SourceMaterial "EquipmentBoxWooden_Weapon_01_Decal"
+     AssignedMaterial "{1BB946314607B6A7}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/Data/EquipmentBoxWooden_decal_FIA.emat"
+    }
+   }
+  }
+  RigidBody "{5872F0EB7DFB5A9D}" {
+   ResponseIndex "SmallDestructible"
+  }
+  SCR_DestructionMultiPhaseComponent "{58F89684469E44B1}" {
+   Enabled 1
+  }
+  SCR_FactionAffiliationComponent "{5A50E7650A1AE9EC}" {
+   "faction affiliation" "FIA"
+  }
+  UniversalInventoryStorageComponent "{58A17A341AB8F069}" {
+   Attributes SCR_ItemAttributeCollection "{58A17A346E386320}" {
+    ItemDisplayName SCR_InventoryUIInfo "{58A17A3474A3430E}" {
+     Name "#AR-EditableEntity_AmmoBoxArsenal_Weapons_FIA_Name"
+    }
+   }
+  }
+ }
+}

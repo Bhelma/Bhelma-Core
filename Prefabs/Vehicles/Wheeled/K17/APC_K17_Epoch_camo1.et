@@ -1,0 +1,32 @@
+Vehicle : "{F86AB1BD36B33407}Prefabs/Vehicles/Wheeled/K17/APC_K17_Epoch.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{62650DFBC4B75593}" {
+     SourceMaterial "Hull"
+     AssignedMaterial "{63EFB6EEE2602293}Assets/Vehicles/Wheeled/K17bumerang/Data/camo1/Hull_camo.emat"
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#RHS-Vehicle_K17_Epoch_Name #RHS-Camo"
+    m_Image "{65A202EC3B291C48}UI/Textures/EditorPreviews/Vehicles/K17/Vehicle_K17_Epoch_camo.edds"
+   }
+  }
+  AICarMovementComponent "{5A3EFB66475D9F87}" {
+   "Max Speed" 20
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    EntitySlotInfo sideContainers {
+     Prefab "{248A9E6E2F741A44}Prefabs/Vehicles/Wheeled/K17/VehParts/Attachments/Attachment_K17_containers_camo1.et"
+    }
+    RegisteringComponentSlotInfo Turret {
+     Prefab "{DC0549A996F7761E}Prefabs/Vehicles/Wheeled/K17/Turret_K17_Epoch_camo1.et"
+    }
+   }
+  }
+ }
+}

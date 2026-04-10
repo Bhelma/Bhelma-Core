@@ -1,0 +1,31 @@
+GenericEntity : "{46FD263F0F368A92}Prefabs/Items/Equipment/Kits/MedicalKit_01/MedicalKit_01_base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  MeshObject "{5CCCD4F57413F626}" {
+   Materials {
+    MaterialAssignClass "{64E16DD886D7ED17}" {
+     SourceMaterial "MedicalKit_01"
+     AssignedMaterial "{EDCA56495B77DBB3}Assets/Items/Equipment/Kits/MedicalKit_01/Data/MedicalKit_01_US.emat"
+    }
+    MaterialAssignClass "{64E16DD886D7ED64}" {
+     SourceMaterial "decals_logo"
+     AssignedMaterial "{85604D79E648B442}Assets/Items/Equipment/Kits/MedicalKit_01/Data/decals_MedicalKit_01_US.emat"
+    }
+   }
+  }
+  SCR_FactionAffiliationComponent "{5E3CBEE8057882D8}" {
+   "faction affiliation" "US"
+  }
+  SCR_UniversalInventoryStorageComponent "{5E4E8A7876A50FDC}" {
+   Attributes SCR_ItemAttributeCollection "{5E4E8A78F11700F6}" {
+    ItemDisplayName SCR_InventoryUIInfo "{5222EB4D07D865FA}" {
+     Name "Kit Medico Beta"
+     Description "Kit medico modificado por Grupo Armados"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     ItemVolume 100
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,40 @@
+Vehicle : "{98225ED6D5F724D7}Prefabs/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_gunship_empty.et" {
+ ID "5A7CEB06421662F8"
+ components {
+  SCR_HelicopterSoundComponent "{5A7CE769E7A9C43E}" {
+   Filenames + {
+    "{3E5C88BE093992B9}Sounds/BH_Sounds.acp"
+   }
+  }
+  BH_AmbientHelicopterControllerComponent "{68AF34CC7322354D}" {
+  }
+  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   CompartmentSlots {
+    BH_FakePilotCompartmentSlot PilotCompartment {
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    Name "#AR-Vehicle_Mi8MT_Gunship_Name_HE"
+    m_Image "{E5760A69CF030784}UI/Textures/EditorPreviews/Vehicles/Helicopters/Mi8MT/Mi8MT_armed_gunship_HE.edds"
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{5EDC86E4AF8908B6}" {
+      m_Value 2625
+     }
+     SCR_EntityBudgetValue "{611E87CA7FF4ED82}" {
+      m_BudgetType RANK_CAPTAIN
+      m_Value 5
+     }
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    SCR_WeaponRackSlotInfo Hardpoints {
+     Prefab "{73622A6C27813495}Prefabs/Vehicles/Helicopters/Mi8MT/VehParts/WeapSystems/Mi8MT_Hardpoints_HE.et"
+    }
+   }
+  }
+ }
+}

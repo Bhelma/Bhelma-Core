@@ -1,0 +1,19 @@
+SCR_ChimeraCharacter : "{37578B1666981FCE}Prefabs/Characters/Core/Character_Base.et" {
+ ID "520EC961A090BBD5"
+ components {
+  BH_BackpackInspectComponent "{68C518EF86BD46E6}" {
+  }
+  ActionsManagerComponent "{520EA1D2F659CE02}" {
+   additionalActions {
+    BH_InspectBackpackAction "{68C518EE6675AA04}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{68C518EE7E8C196F}" {
+      Name "ABRIR MOCHILA"
+     }
+    }
+   }
+  }
+ }
+}

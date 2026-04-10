@@ -1,0 +1,12 @@
+GenericEntity : "{E7DF31108D38A8A8}Prefabs/Items/Fuel/Jerrycan_01/Jerrycan_01_item_base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  SCR_FuelManagerComponent "{5DF4E851BB96728E}" {
+   FuelNodes {
+    SCR_FuelNode "{5DF4E851B99B1EA4}" {
+     m_fInitialFuelTankState 20
+    }
+   }
+  }
+ }
+}

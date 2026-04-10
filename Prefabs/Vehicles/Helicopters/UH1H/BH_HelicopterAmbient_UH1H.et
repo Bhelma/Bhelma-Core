@@ -1,0 +1,122 @@
+Vehicle : "{D03C0F6044DB5208}Prefabs/Vehicles/Helicopters/UH1H/UH1H_base.et" {
+ ID "57DA6675519A417B"
+ components {
+  SCR_HelicopterSoundComponent "{5A7CE769E7A9C43E}" {
+   Filenames + {
+    "{3E5C88BE093992B9}Sounds/BH_Sounds.acp"
+   }
+  }
+  BH_AmbientHelicopterControllerComponent "{68AF34C9CB303A4D}" {
+  }
+  SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   CompartmentSlots {
+    BH_FakePilotCompartmentSlot PilotCompartment {
+    }
+   }
+  }
+  SCR_EditableVehicleComponent "{50DEB7C26B5EB312}" {
+   m_UIInfo SCR_EditableVehicleUIInfo "{5298E609432D192D}" {
+    m_aAuthoredLabels + {
+     TRAIT_PASSENGERS_LARGE TRAIT_SUPPLYSTORAGE_LARGE
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{68AD68F15A0DD801}" {
+      m_BudgetType RANK_SERGEANT
+      m_Value 3
+     }
+    }
+    m_aPassengerEntityBudgetCost {
+     SCR_EntityBudgetValue "{5C7AF24EB7F8DDD7}" {
+      m_Value 8
+     }
+    }
+   }
+  }
+  SCR_ResourceComponent "{647A8BBB14D93D4B}" : "{80C579EC878D62C2}Prefabs/Vehicles/Helicopters/UH1H/CT_ResourceComponent_UH1H.ct" {
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Seat_Gunners {
+     Prefab "{67030528FA4FA725}Prefabs/Vehicles/Helicopters/UH1H/VehParts/Seats/VehPart_UH1H_seats_gunners.et"
+    }
+    RegisteringComponentSlotInfo Seat_Cargo {
+     Prefab "{205599C7074F1E02}Prefabs/Vehicles/Helicopters/UH1H/VehParts/Seats/VehPart_UH1H_seats_cargo.et"
+    }
+    RegisteringComponentSlotInfo USArmyDecal {
+     Prefab "{B7AFBF0A9469B3B6}Prefabs/Vehicles/Helicopters/UH1H/VehParts/UH1H_USArmyDecal.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_01 {
+     Offset 0 0.8859 0.5653
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_02 {
+     Offset 0.0058 1.211 0.5675
+     Angles 0 178.36311 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_03 {
+     Offset 0 1.541 0.5598
+     Angles 0 0.998 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_04 {
+     Offset 0.0001 1.1579 0.8339
+     Angles -90 0 1.1391
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_05 {
+     Offset 0 1.6901 0.8434
+     Angles -90 0 -0.1259
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_06 {
+     Offset 0 1.8345 0.5692
+     Angles 0 178.63611 0
+     MergePhysics 1
+     Prefab "{11E588E215EBCF23}Prefabs/Props/Military/SupplyBox/SupplyCrate/SupplyCrate_01/SupplyCrate_01_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_07 {
+     Offset 0.1937 1.9452 0.9951
+     Angles 0 0.946 0
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_08 {
+     Offset -0.1788 1.9431 0.9787
+     Angles 0 -2.9124 0
+     MergePhysics 1
+     Prefab "{2E10FD09B66A44FF}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_large_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_09 {
+     Offset -0.1032 2.146 0.5942
+     Angles 0 111.5059 0
+     MergePhysics 1
+     Prefab "{8C29E423099B0C5A}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_medium_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_10 {
+     Offset 0.1131 2.1387 0.9593
+     Angles 0 20 0
+     MergePhysics 1
+     Prefab "{8C29E423099B0C5A}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_medium_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_11 {
+     Offset -0.1985 2.1387 0.9852
+     Angles 0 -15.433 0
+     MergePhysics 1
+     Prefab "{8C29E423099B0C5A}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_medium_Vehicle.et"
+    }
+    RegisteringComponentSlotInfo SupplyStorage_12 {
+     Offset 0.1301 2.146 0.4943
+     Angles 0 81.9295 0
+     MergePhysics 1
+     Prefab "{8C29E423099B0C5A}Prefabs/Props/Military/SupplyBox/SupplyPortableContainers/SupplyPortableContainer_01/SupplyPortableContainers_01_medium_Vehicle.et"
+    }
+   }
+  }
+ }
+}

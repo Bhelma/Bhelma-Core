@@ -1,0 +1,13 @@
+GenericEntity : "{C95E11C60810F432}Prefabs/Items/Core/Item_Base.et" {
+ ID "508AB2013EEE1E00"
+ components {
+  SCR_UniversalInventoryStorageComponent "{5E4E8A7876A50FDC}" {
+   Attributes SCR_ItemAttributeCollection "{5E4E8A78F11700F6}" {
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     ItemVolume 30
+    }
+    m_Size SLOT_1x1
+   }
+  }
+ }
+}

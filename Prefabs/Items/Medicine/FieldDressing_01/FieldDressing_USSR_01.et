@@ -1,0 +1,14 @@
+GenericEntity : "{D511F5C330B1697E}Prefabs/Items/Medicine/FieldDressing_01/FieldDressing_USSR_01_Base.et" {
+ ID "3472273B5965FE24"
+ components {
+  InventoryItemComponent "{5222EB4D0C73006B}" {
+   Attributes SCR_ItemAttributeCollection "{5222EB4D0A2B466B}" {
+    ItemPhysAttributes ItemPhysicalAttributes PhysicalAttributes {
+     Weight 0.01
+     ItemDimensions 1 1 1
+     ItemVolume 10
+    }
+   }
+  }
+ }
+}

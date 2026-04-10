@@ -1,0 +1,17 @@
+GenericEntity : "{343EC0126CCD0F58}Prefabs/Vehicles/Wheeled/M998/VehParts/M1025_roof.et" {
+ ID "4B42E71698F5739C"
+ components {
+  MeshObject "{4B42E716914465B9}" {
+   Materials {
+    MaterialAssignClass "{68E923D32B86C39F}" {
+     SourceMaterial "Base"
+     AssignedMaterial "{B46B2E6FB98086A7}Assets/Vehicles/Wheeled/M998/Data/BH_IED_HMMWV_Body_Roof.emat"
+    }
+    MaterialAssignClass "{68E923D32B86C3F8}" {
+     SourceMaterial "HMMWV_Body_Roof_Int_38AD25796F1BEB94"
+     AssignedMaterial "{432D15580B785392}Assets/Vehicles/Wheeled/M998/Data/BH_IED_HMMWV_Body_Roof_Int.emat"
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,119 @@
+Vehicle : "{4A71F755A4513227}Prefabs/Vehicles/Wheeled/M998/M1025.et" {
+ ID "BBCBA43A9778AE21"
+ components {
+  SCR_VehicleSoundComponent "{55C2E66AD4EF2CA6}" {
+   Filenames + {
+    "{48F2916BF555AD1B}Sounds/BH_IED/BH_ied_proximity_beep.acp"
+   }
+  }
+  BH_VehicleJammer "{68E7229E4CC47016}" {
+  }
+  BaseSlotComponent "{68E923C231A80198}" {
+   AttachType RegisteringComponentSlotInfo Antenna_rear_1 {
+    Offset -1.8303 0.22 -4.8003
+    Angles 0 180 0
+    Prefab "{BB50F31C226E6F47}Prefabs/Vehicles/Wheeled/M998/VehParts/M998_antenna_rear.et"
+    SyncAnims 1
+    RegisterActions 1
+    RegisterDamage 1
+    RegisterControllers 1
+    RegisterWeapons 1
+    RegisterCompartments 1
+    RegisterLights 1
+    RegisterActionSignals 1
+   }
+   EntityPrefab "{BB50F31C226E6F47}Prefabs/Vehicles/Wheeled/M998/VehParts/M998_antenna_rear.et"
+  }
+  BaseSlotComponent "{68E923C2D9656C03}" {
+   AttachType RegisteringComponentSlotInfo Antenna_rear_2 {
+    Offset 0.032 0.0731 3.4846
+    Prefab "{BB50F31C226E6F47}Prefabs/Vehicles/Wheeled/M998/VehParts/M998_antenna_rear.et"
+    SyncAnims 1
+    RegisterActions 1
+    RegisterDamage 1
+    RegisterControllers 1
+    RegisterWeapons 1
+    RegisterCompartments 1
+    RegisterLights 1
+    RegisterActionSignals 1
+   }
+   EntityPrefab "{BB50F31C226E6F47}Prefabs/Vehicles/Wheeled/M998/VehParts/M998_antenna_rear.et"
+  }
+  MeshObject "{51DAA09FEFBFC0E7}" {
+   Materials {
+    MaterialAssignClass "{68E923D247F55C71}" {
+     SourceMaterial "Assets/Vehicles/Wheeled/M998/Data/HMMWV_Body"
+     AssignedMaterial "{CCFD2BE4B6C0B219}Assets/Vehicles/Wheeled/M998/Data/BH_IED_HMMWV_Body.emat"
+    }
+    MaterialAssignClass "{68E923D247F55C5F}" {
+     SourceMaterial "HMMWV_Body_Details"
+     AssignedMaterial "{9CB2A5B272CDE733}Assets/Vehicles/Wheeled/M998/Data/BH_IED_HMMWV_Body_Details.emat"
+    }
+    MaterialAssignClass "{68E923D247F55FA9}" {
+     SourceMaterial "HMMWV_Body_Details_Int_1C96436D98233F41"
+     AssignedMaterial "{F8B6E39E55F302AF}Assets/Vehicles/Wheeled/M998/Data/BH_IED_HMMWV_Body_Details_Int.emat"
+    }
+    MaterialAssignClass "{68E923D247F55FAC}" {
+     SourceMaterial "HMMWV_Body_Int_1C7B4ACE653D9BD1"
+     AssignedMaterial "{6F5DE564D3E6CC90}Assets/Vehicles/Wheeled/M998/Data/BH_IED_HMMWV_Body_Int.emat"
+    }
+   }
+  }
+  SCR_UniversalInventoryStorageComponent "{5916C587FC993363}" {
+   MultiSlots {
+    MultiSlotConfiguration "{68E7229FD18E1DEA}" {
+     SlotTemplate InventoryStorageSlot Herramienta_Multiusos {
+      Prefab "{C3331802F687D1BC}Prefabs/IED/BH_Wirecutter.et"
+     }
+     NumSlots 2
+    }
+    MultiSlotConfiguration "{68E923C35B2841E3}" {
+     SlotTemplate InventoryStorageSlot LlaveInglesa {
+      Prefab "{33B2DFDCD0EBA3DB}Prefabs/Items/Equipment/Kits/RepairKit_01/RepairKit_01_wrench.et"
+     }
+     NumSlots 1
+    }
+   }
+  }
+  SlotManagerComponent "{55BCE45E438E4CFF}" {
+   Slots {
+    RegisteringComponentSlotInfo Roof {
+     Prefab "{3A81DB9FBD74B239}Prefabs/Vehicles/Wheeled/M998/VehParts/BH_IED_M1025_roof.et"
+    }
+   }
+  }
+  ActionsManagerComponent "{C97BE5489221AE18}" {
+   ActionContexts {
+    UserActionContext "{68E7229CC2454820}" {
+     UIInfo SCR_ActionContextUIInfo "{68E7229CD8DE579C}" {
+     }
+     ContextName "Panel_Inhibidor"
+     Position PointInfo "{68E7229CFAE6F332}" {
+      Offset -0.2899 1.1587 0.5439
+      Angles 0 90.2152 0
+     }
+     Radius 0.2
+     VisibilityAngle 110
+    }
+   }
+   additionalActions {
+    BH_JammerActivateAction "{68E7229F84AB8699}" {
+     ParentContextList {
+      "Panel_Inhibidor"
+     }
+     UIInfo UIInfo "{68E7229FAF42CAF2}" {
+      Name "Activar Jammer"
+     }
+    }
+    BH_JammerDeactivateAction "{68E7229FA77642B4}" {
+     ParentContextList {
+      "Panel_Inhibidor"
+     }
+     UIInfo UIInfo "{68E7229FB84AECF0}" {
+      Name "Desactivar Jammer"
+     }
+    }
+   }
+  }
+ }
+}

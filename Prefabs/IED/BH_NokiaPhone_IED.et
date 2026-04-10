@@ -1,0 +1,51 @@
+GenericEntity {
+ ID "68E722967868CA0C"
+ components {
+  Persistence "{68F139F5B92A4D37}" {
+  }
+  SoundComponent "{68E7229685C67CD9}" {
+  }
+  InventoryItemComponent "{68EF209CF707760C}" {
+   Attributes SCR_ItemAttributeCollection "{68EF209321D346C1}" {
+    ItemDisplayName SCR_InventoryUIInfo "{68EF20938E2B2490}" {
+     Name "Bhelma 3310"
+     Description "Movil 3310 tecnologia GSM"
+    }
+    ItemPhysAttributes ItemPhysicalAttributes "{68EF20932707462E}" {
+     Weight 0.1
+     SizeSetupStrategy Manual
+     ItemDimensions 5 10 2
+     ItemVolume 10
+    }
+    CustomAttributes {
+     PreviewRenderAttributes "{68F976296F6FF96C}" {
+      CameraOrbitAngles 0 85 0
+     }
+    }
+    m_Size SLOT_1x1
+   }
+  }
+  MeshObject "{68E7229632B4D31E}" {
+   Object "{BBD3BBBE048033BB}Assets/Items/Movil/BH_PhoneNokia_IED.xob"
+  }
+  RigidBody "{68F139F5CC812705}" {
+   ModelGeometry 1
+  }
+  ActionsManagerComponent "{68E72296DEE6323B}" {
+   ActionContexts {
+    UserActionContext "{68E72296DD288DFA}" {
+     ContextName "Teclado"
+     Position PointInfo "{68E72296D10CA1B4}" {
+      Offset 0.015 -0.0225 -0.0011
+     }
+    }
+   }
+  }
+  RplComponent "{68E722968DE90D54}" {
+  }
+  Hierarchy "{68E7229680DE4CBC}" {
+  }
+ }
+ coords 0 0 0
+ angles -0.233 158.582 -0.124
+}
